@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>ShoeShop - La Meilleure Boutique de Chaussures</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Bleu très clair */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function sondageModele() {
+            let modele = prompt("Quel est votre modèle préféré ? (Répondez par un numéro entre 1 et 10)");
+            if (modele >= 1 && modele <= 10) {
+                alert("Merci pour votre réponse ! Le modèle " + modele + " est populaire.");
+            } else {
+                alert("Veuillez entrer un numéro entre 1 et 10.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenue chez ShoeShop !</h1>
+    <p>ShoeShop, la meilleure boutique de chaussures, vous propose des modèles uniques pour tous les styles.</p>
+    <p>Découvrez notre collection exclusive et trouvez votre paire parfaite !</p>
+    <p><a href="produits.html">Voir les modèles</a></p>
+    <button onclick="sondageModele()">Participer au sondage : Quel est votre modèle préféré ?</button>
+</body>
+</html>
